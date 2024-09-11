@@ -1,0 +1,151 @@
+/* Style Sheet for Web Page */
+
+/* WEB FONT */
+@import url(https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap);
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    margin-top: 20px;
+}
+
+figure {
+    margin-top: 20px;
+}
+
+.object1 {
+    width: 500px;
+    height: 200px;
+    object-position: top left;
+    margin-top: 20px;
+}
+
+body {
+    font: normal 18px/22px "Varela Round", sans-serif;
+    background-color: lightsteelblue;
+    color: #2e2e2e;
+    margin-left: 210px;
+    margin-right: 30px;
+}
+
+h1, h2, h3 {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    color: black;
+    text-shadow: 
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    color: black;
+    text-shadow: 
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray;
+  }
+
+p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+h3 + p {
+    margin: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.education li {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+article {
+    padding: 20px;
+    border: 2px solid dimgray;
+}
+
+table {
+    padding: 5px;
+    border: 5px outset #ddd;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+form {
+    padding: 5px;
+    margin-left: 20px;
+    border: 7px outset #ddd;
+    background-color: rgba(224, 255, 255, 0.299);
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+legend {
+    text-decoration: underline;
+    text-align: center;
+    margin-left: -25px;
+}
+
+fieldset {
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+button {
+    padding: 2px;
+    font-size: 14px;
+    border: 3px outset #ddd;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px;
+}
+
