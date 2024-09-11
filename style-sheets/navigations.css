@@ -1,6 +1,6 @@
 /* Style Sheet for Navigation Bar */
 
-ul {
+.fixed-nav-bar ul, .about-me-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -96,14 +96,15 @@ ul {
 .about-me-menu {
     height: 100%;
     margin: 0 auto;
+    padding: 0;
 }
 
 .about-me-menu a {
     color: whitesmoke;
     text-shadow:  
+        /* 2px 2px 0 black,
         2px 2px 0 black,
-        2px 2px 0 black,
-        2px 2px 0 black,
+        2px 2px 0 black, */
         2px 2px 0 black;
     height: 100%;
 }
@@ -130,24 +131,48 @@ ul {
 } */
 
 .about-me-menu-items {
-    display: inline-block;
+    /* display: inline-block; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .about-me-menu-items li {
-    display: inline-block;
+    /* display: inline-block; */
     margin-bottom: 20px;
 }
 
 .about-me-menu-items a {
+    display: block;
+    width: 100%;
+    padding: 10px;
     text-decoration: none;
+    color: whitesmoke;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+}
+
+.about-me-menu-items a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-    .about-me-menu { 
+    .about-me-nav{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+    main {
+        margin-left: 0;
+    }
+    /* .about-me-menu { 
         position: relative;
         float: none;
         display: block;
-    }
+    } */
 }
 
 .contact-nav {
