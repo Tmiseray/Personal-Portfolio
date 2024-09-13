@@ -85,7 +85,7 @@ The Personal Portfolio is a static website built using HTML and CSS. The site fe
     - Open `home.html` in your preferred browser
 
 ### Project Structure
-
+```bash
 personal-portfolio/
 │
 ├── pages/
@@ -127,6 +127,6 @@ personal-portfolio/
 │   │       └── [images] 
 │   │
 │   └── [profile-picture] 
-
+```
 ## Contribution
 Contributions to improve the design or add new features are always welcome! If you encounter any issues or have suggestions for enhancement, feel free to open a new issue or submit a pull request.

@@ -314,6 +314,8 @@ p + ol {
 .tb-row1-col2 {
     flex: 45%;
     padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .tb-row2-col1 {
@@ -324,6 +326,8 @@ p + ol {
 .tb-row2-col2 {
     flex: 40%;
     padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* To-Do List */
@@ -398,15 +402,18 @@ p + ol {
 }
 
 /* Basic Library Management System */
-.lms-validate, .lms-user, .lms-book, .lms-author, .lms-library, .lms-library2, .lms-userinput1, .lms-userinput2, .lms-userinput3, .lms-userinterface1, .lms-userinterface2, .lms-userinterface3, .lms-userinterface4 {
+.lms-validate, .lms-user, .lms-book, .lms-author, .lms-library, .lms-library2, .lms-userinterface1, .lms-userinterface2, .lms-userinterface3, .lms-userinterface4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
 
-.lms-userinterface1 {
-    margin-top: -90px;
+.lms-userinput {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 /* Library Management System with 
