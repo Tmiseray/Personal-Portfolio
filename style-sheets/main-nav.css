@@ -1,11 +1,5 @@
 /* Style Sheet for Navigation Bar */
 
-.main-nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .main-nav-bar {
     position: fixed;
     top: 0;
@@ -14,26 +8,47 @@
     z-index: 9999;
     width: 100%;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
     background-color: black;
     box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
 }
 
+.main-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .main-nav-bar li, .main-nav-bar a { 
     height: 60px;
-    line-height: 30px;
+    line-height: 60px;
     text-align: center;
     padding: 16px 18px;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .menu {
-    width: 75%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    /* width: 75%;
+    margin: 0 auto; */
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu a {
     color: whitesmoke;
-    width: 25%;
+    text-decoration: none;
+    width: auto;
 }
 
 .menu a:visited {
@@ -50,10 +65,6 @@
     color: white !important;
 }
 
-.menu-items {
-    display: inline-block;
-}
-
 .menu-items li {
     display: inline-block;
     margin-right: 10px;
@@ -64,10 +75,44 @@
     text-decoration: none;
 }
   
-@media only screen and (max-width: 600px) {
-    .menu { 
-        position: relative;
-        float: none;
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .main-nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-items li {
         display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-items a {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+    .main-nav-bar {
+        flex-direction: column;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .menu-items a {
+        font-size: 16px;
+        padding: 8px 10px;
     }
 }
